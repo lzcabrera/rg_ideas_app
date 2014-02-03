@@ -11,6 +11,7 @@ group :development do
 end
 group :production do
   gem 'pg'
+  gem 'rails_12factor' # modifies the way Rails works to suit Heroku. Logging is updated and the configuration for static assets (your images, stylesheets and javascript files) is tweaked to work properly within Heroku's systems
 end
 
 gem 'carrierwave'
